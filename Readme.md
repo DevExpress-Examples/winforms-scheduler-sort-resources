@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Comparers.cs](./CS/Comparers.cs) (VB: [Comparers.vb](./VB/Comparers.vb))
+* [Form1.cs](./CS/Form1.cs) (VB: [Form1.vb](./VB/Form1.vb))
+<!-- default file list end -->
 # How to sort resources
 
 
