@@ -1,32 +1,28 @@
-﻿Imports System
+Imports System
 Imports System.Collections
 Imports System.Collections.Generic
 Imports DevExpress.XtraScheduler
 
 Namespace SchedulerSortResources
+
     Public MustInherit Class ResourceBaseComparer
         Implements IComparer(Of Resource), IComparer
 
-        #Region "IComparer Members"
+'#Region "IComparer Members"
         Private Function IComparer_Compare(ByVal x As Object, ByVal y As Object) As Integer Implements IComparer.Compare
             Return CompareCore(x, y)
         End Function
+
         Public Function Compare(ByVal x As Resource, ByVal y As Resource) As Integer Implements IComparer(Of Resource).Compare
             Return CompareCore(x, y)
         End Function
-        #End Region
 
+'#End Region
         Protected Overridable Function CompareCore(ByVal x As Object, ByVal y As Object) As Integer
-            Dim xRes As Resource = DirectCast(x, Resource)
-            Dim yRes As Resource = DirectCast(y, Resource)
-
-            If xRes Is Nothing OrElse yRes Is Nothing Then
-                Return 0
-            End If
-            If ResourceEmpty.Resource.Equals(xRes) OrElse ResourceEmpty.Resource.Equals(yRes) Then
-                Return 0
-            End If
-
+            Dim xRes As Resource = CType(x, Resource)
+            Dim yRes As Resource = CType(y, Resource)
+            If xRes Is Nothing OrElse yRes Is Nothing Then Return 0
+            If ResourceEmpty.Resource.Equals(xRes) OrElse ResourceEmpty.Resource.Equals(yRes) Then Return 0
             Return CompareResources(xRes, yRes)
         End Function
 
@@ -60,21 +56,11 @@ Namespace SchedulerSortResources
 
         Protected Overrides Function CompareResources(ByVal xRes As Resource, ByVal yRes As Resource) As Integer
             ' "Unassigned" resource
-            If Convert.ToInt32(yRes.Id) = -1 Then
-                Return 1
-            End If
-
+            If Convert.ToInt32(yRes.Id) = -1 Then Return 1
             ' "Unassigned" resource
-            If Convert.ToInt32(xRes.Id) = -1 Then
-                Return -1
-            End If
-
+            If Convert.ToInt32(xRes.Id) = -1 Then Return -1
             Dim order As Integer = schedulerStorage.Appointments.Items.FindAll(Function(e) e.ResourceId.Equals(yRes.Id)).Count - schedulerStorage.Appointments.Items.FindAll(Function(e) e.ResourceId.Equals(xRes.Id)).Count
-
-            If order = 0 Then
-                Return schedulerStorage.Resources.Items.IndexOf(xRes) - schedulerStorage.Resources.Items.IndexOf(yRes)
-            End If
-
+            If order = 0 Then Return schedulerStorage.Resources.Items.IndexOf(xRes) - schedulerStorage.Resources.Items.IndexOf(yRes)
             Return order
         End Function
     End Class
