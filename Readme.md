@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# WinForms scheduler - Sort resources
+# WinForms Scheduler - Sort resources
 
 This example shows how to create a comparer to sort Scheduler resources based on a specific condition (in this example, the `Resource.Caption` and the number of resource appointments).
 
