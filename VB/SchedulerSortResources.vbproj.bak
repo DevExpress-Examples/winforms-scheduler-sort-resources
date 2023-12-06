@@ -7,11 +7,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{4A19EF79-6C7F-4579-A9F6-362680E0AE1C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <AssemblyName>SchedulerSortResources</AssemblyName>
-    <FileUpgradeFlags></FileUpgradeFlags>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
-    <UpgradeBackupLocation></UpgradeBackupLocation>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
     <IsWebBootstrapper>true</IsWebBootstrapper>
     <PublishUrl>http://localhost/SchedulerSortResources/</PublishUrl>
     <Install>true</Install>
@@ -55,45 +58,29 @@
     <NoWarn>42353,42354,42355</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Printing.v13.1.Core, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+    <Reference Include="DevExpress.Data.v10.1, Version=10.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\DevExpress.Printing.v13.1.Core.dll</HintPath>
+      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\10.1.9\DevExpress.Data.v10.1.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Data.v13.1, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+    <Reference Include="DevExpress.Utils.v10.1, Version=10.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\DevExpress.Data.v13.1.dll</HintPath>
+      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\10.1.9\DevExpress.Utils.v10.1.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Utils.v13.1, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+    <Reference Include="DevExpress.XtraEditors.v10.1, Version=10.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\DevExpress.Utils.v13.1.dll</HintPath>
+      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\10.1.9\DevExpress.XtraEditors.v10.1.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.XtraEditors.v13.1, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+    <Reference Include="DevExpress.XtraScheduler.v10.1.Reporting.Extensions, Version=10.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\DevExpress.XtraEditors.v13.1.dll</HintPath>
+      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\10.1.9\DevExpress.XtraScheduler.v10.1.Reporting.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.XtraScheduler.v13.1.Reporting.Extensions, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.XtraScheduler.v10.1, Version=10.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\DevExpress.XtraScheduler.v13.1.Reporting.Extensions.dll</HintPath>
+      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\10.1.9\DevExpress.XtraScheduler.v10.1.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.XtraPrinting.v13.1, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.XtraScheduler.v10.1.Core, Version=10.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\DevExpress.XtraPrinting.v13.1.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraScheduler.v13.1, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\DevExpress.XtraScheduler.v13.1.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraScheduler.v13.1.Core, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>True</Private>
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\DevExpress.XtraScheduler.v13.1.Core.dll</HintPath>
+      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\10.1.9\DevExpress.XtraScheduler.v10.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">

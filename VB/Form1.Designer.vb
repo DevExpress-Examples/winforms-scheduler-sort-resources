@@ -31,7 +31,7 @@ Namespace SchedulerSortResources
 			Me.schedulerControl1 = New DevExpress.XtraScheduler.SchedulerControl()
 			Me.schedulerStorage1 = New DevExpress.XtraScheduler.SchedulerStorage(Me.components)
 			Me.dataModel1BindingSource = New System.Windows.Forms.BindingSource(Me.components)
-			Me.dataModel1 = New SchedulerSortResources.DataModel()
+			Me.dataModel1 = New DataModel()
 			Me.comboBox1 = New System.Windows.Forms.ComboBox()
 			Me.label1 = New System.Windows.Forms.Label()
 			CType(Me.schedulerControl1, System.ComponentModel.ISupportInitialize).BeginInit()
